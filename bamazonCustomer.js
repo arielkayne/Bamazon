@@ -80,7 +80,7 @@ function checkInventory(){
 	connection.query("SELECT * FROM products WHERE item_id="+buyIt, function(err, res) {
 		if (err) throw err;
 		// 	if not...insufficient quantity messages
-		if (res[0].stock_quantity<=thisQuant){
+		if (res[0].stock_quantity<thisQuant){
 			console.log("Your order could not be fulfilled because we don't have enough of '"+res[0].product_name+"' available.");
 		}
 		// 	if yes...fulfil the customer order
