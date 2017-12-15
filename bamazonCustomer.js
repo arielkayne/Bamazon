@@ -88,7 +88,7 @@ function checkInventory(){
 			//decrements remaining quantity
 			connection.query("UPDATE products SET stock_quantity="+(res[0].stock_quantity-thisQuant)+" WHERE item_id="+buyIt);
 			//display the customer total order cost
-			console.log("Your order has been fulfilled. You owe $"+(buyIt*thisQuant)+" to Bamazon's receivable department. They will contact you shortly.");
+			console.log("Your order has been fulfilled. You owe $"+(res[0].price*thisQuant)+" to Bamazon's receivable department. They will contact you shortly.");
 			connection.query("SELECT * FROM products WHERE item_id="+buyIt, function(err, res){
 				if (err) throw err;
 				console.log("The store now has: "+res[0].stock_quantity+" of "+res[0].product_name+" remaining in inventory.");		
