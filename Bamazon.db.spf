@@ -104,6 +104,9 @@ SELECT * FROM products WHERE item_id=2;</string>
 	<array/>
 	<key>queryHistory</key>
 	<array>
+		<string>update products set stock_quantity=10 where item_id=5</string>
+		<string>SELECT * FROM products WHERE item_id=3</string>
+		<string>update products set stock_quantity=10 where item_id=3</string>
 		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(3,"Mountain Dew Red","Beverages",1.00,12);
@@ -153,24 +156,6 @@ INSERT INTO products (item_id,product_name,department_name,price,stock_quantity)
     price double(11,2),
     stock_quantity int(11)
 )</string>
-		<string>CREATE TABLE products (
-    item_id int(11),
-    product_name varchar(255),
-    department_name varchar(255),
-    price double(11,2),
-    stock_quantity int(11)
-   ....
-)</string>
-		<string>CREATE TABLE products (
-    item_id integer[11],
-    product_name varchar(255),
-    department_name varchar(255),
-    price double(11,2),
-    stock_quantity int(11)
-   ....
-)</string>
-		<string>create database bamazon
-use database bamazon</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
