@@ -76,6 +76,7 @@
 
 USE bamazon;
 
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(3,"Mountain Dew Red","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(4,"Squirt","Beverages",1.00,12);
@@ -86,7 +87,7 @@ INSERT INTO products (item_id,product_name,department_name,price,stock_quantity)
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(9,"Dr. Thunder","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(10,"Yoohoo","Beverages",1.50,6);
 
-</string>
+SELECT * FROM products WHERE item_id=2;</string>
 			<key>table</key>
 			<string>products</string>
 			<key>view</key>
@@ -103,7 +104,16 @@ INSERT INTO products (item_id,product_name,department_name,price,stock_quantity)
 	<array/>
 	<key>queryHistory</key>
 	<array>
-		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12)</string>
+		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(3,"Mountain Dew Red","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(4,"Squirt","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(5,"Surge","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(6,"Mello Yello","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(7,"La Croix","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(8,"Red Bull","Beverages",2.00,8);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(9,"Dr. Thunder","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(10,"Yoohoo","Beverages",1.50,6)</string>
 		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(3,"Mountain Dew Red","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(4,"Squirt","Beverages",1.00,12);
@@ -113,7 +123,25 @@ INSERT INTO products (item_id,product_name,department_name,price,stock_quantity)
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(8,"Red Bull","Beverages",2.00,8);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(9,"Dr. Thunder","Beverages",1.00,12);
 INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(10,"Yoohoo","Beverages",1.50,6)</string>
+		<string>2,"Sprite","Beverages",1.00,12)</string>
 		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12)</string>
+		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(3,"Mountain Dew Red","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(4,"Squirt","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(5,"Surge","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(6,"Mello Yello","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(7,"La Croix","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(8,"Red Bull","Beverages",2.00,8);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(9,"Dr. Thunder","Beverages",1.00,12);
+INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(</string>
+		<string>SELECT * FROM products WHERE item_id=2</string>
+		<string>SELECT * FROM products WHERE item_id="2"</string>
+		<string>SELECT * FROM products WHERE {item_id:"2"}</string>
+		<string>SELECT * FROM products WHERE item_id:"2"</string>
+		<string>select item_id,3 from products</string>
+		<string>select item_id 3 from products</string>
+		<string>INSERT INTO products (item_id,product_name,department_name,price,stock_quantity) VALUES(2,"Sprite","Beverages",1.00,12)</string>
 		<string>USE bamazon</string>
 		<string>INSERT INTO bamazon (item_id,product_name,department_name,price,stock_quantity) VALUES(1,"Coca-Cola","Beverages",1.00,12)</string>
 		<string>USE products</string>
@@ -143,38 +171,6 @@ INSERT INTO products (item_id,product_name,department_name,price,stock_quantity)
 )</string>
 		<string>create database bamazon
 use database bamazon</string>
-		<string>create database bamazon
-current database bamazon</string>
-		<string>create database bamazon</string>
-		<string>SELECT * FROM songs WHERE genre='Dance'</string>
-		<string>DROP DATABASE IF EXISTS playlistDB;
-CREATE DATABASE playlistDB;
-USE playlistDB;
-CREATE TABLE songs(
-  id INT NOT NULL AUTO_INCREMENT,
-  title VARCHAR(45) NULL,
-  artist VARCHAR(45) NULL,
-  genre VARCHAR(45) NULL,
-  PRIMARY KEY (id)
-);
-INSERT INTO songs (title, artist, genre)
-VALUES ("Human", "Krewella", "Dance");
-INSERT INTO songs (title, artist, genre)
-VALUES ("TRNDSTTR","Black Coast", "Dance");
-INSERT INTO songs (title, artist, genre)
-VALUES ("Whos Next", "The Who", "Classic Rock");
-INSERT INTO songs (title, artist, genre)
-VALUES ("Yellow Submarine", "The Beatles", "Classic Rock")</string>
-		<string>CREATE DATABASE playlistDB</string>
-		<string>create table people(
-	name VARCHAR(30) NOT NULL, 
-	has_pet BOOLEAN NOT NULL,
-	pet_name VARCHAR(30),
-	pet_age INTEGER (10)
-)</string>
-		<string>create database animals_db</string>
-		<string>drop database tables</string>
-		<string>drop database</string>
 	</array>
 	<key>rdbms_type</key>
 	<string>mysql</string>
